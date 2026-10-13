@@ -1,0 +1,17 @@
+package lab9_scb;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JFrame;
+
+public class ScribblePenelTesting {
+	public static void main(String[] args) {
+		JFrame frame = new JFrame("Scribble Panel");
+		ScribblePanel sc=new ScribblePanel(); //create an object of ScribblePenel
+		frame.add(sc, BorderLayout.CENTER); //add the object into CENTER of JFrame
+		frame.setSize(300, 300); //set a frame's resolution
+		frame.setLocationRelativeTo(null); //set a location at center the frame
+		frame.setVisible(true); //set visible
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //set default Close Operation
+	}
+}
